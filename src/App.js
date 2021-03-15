@@ -1,59 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const foodILike = [
-  {
-    id: 1,
-    name: "김치",
-    url:
-      "https://image.shutterstock.com/image-photo/korea-food-top-view-chinese-600w-1755822044.jpg",
-    rating: 5.0,
-  },
-  {
-    id: 2,
-    name: "라면",
-    url:
-      "https://image.shutterstock.com/image-photo/steam-smoke-instant-noodles-bowl-600w-1654396696.jpg",
-    rating: 4.3,
-  },
-  {
-    id: 3,
-    name: "삼겹살",
-    url:
-      "https://image.shutterstock.com/image-photo/raw-pork-belly-isolated-on-600w-1595467555.jpg",
-    rating: 4.7,
-  },
-];
+class App extends React.Component {
+  state = {
+    name: "Myeongil",
+    count: 0,
+  };
 
-function Food({ name, picture, rating }) {
-  return (
-    <div>
-      <h3>나는 {name}를 좋아해</h3>
-      <h4>등급: {rating} / 5.0</h4>
-      <img src={picture} alt={name} />
-    </div>
-  );
+  add = () => {
+    this.setState((current) => ({
+      name: current.name,
+      count: current.count + 1,
+    }));
+  };
+  minus = () => {
+    this.setState((current) => ({
+      name: current.name,
+      count: current.count - 1,
+    }));
+  };
+
+  render() {
+    return (
+      <div>
+        <h1>Hi ,{this.state.name}</h1>
+        <h3>This is class component</h3>
+        <h3>The number is : {this.state.count}</h3>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Min</button>
+      </div>
+    );
+  }
 }
-
-Food.propTypes = {
-  name: PropTypes.string.isRequired,
-  picture: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-};
-
-function renderFood(dish) {
-  return (
-    <Food
-      key={dish.id}
-      name={dish.name}
-      picture={dish.url}
-      rating={dish.rating}
-    />
-  );
-}
-
-function App() {
-  return <div>{foodILike.map(renderFood)}</div>;
-}
-
 export default App;

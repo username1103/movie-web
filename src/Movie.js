@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import "./Movie.css";
 
 function Moives({ year, title, genres, summary, poster }) {
+  let sliceSummary =
+    summary.length >= 150 ? summary.slice(0, 150) + "..." : summary;
   return (
     <div className="movies__movie">
       <div className="img_container">
@@ -18,7 +20,7 @@ function Moives({ year, title, genres, summary, poster }) {
             </li>
           ))}
         </ul>
-        <p className="movie__summary">{summary}</p>
+        <p className="movie__summary">{sliceSummary}</p>
       </div>
     </div>
   );

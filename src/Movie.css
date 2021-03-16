@@ -53,6 +53,17 @@
     img{
         width:130px;
     }
+    .movie__title{
+        font-size:1em;
+    }
+
+    .movie__genre{
+        font-size:0.8em;
+    }
+
+    .movie__summary{
+        font-size:0.8em;
+    }
 }
 
 

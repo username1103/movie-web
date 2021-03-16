@@ -5,10 +5,12 @@ import "./Movie.css";
 function Moives({ year, title, genres, summary, poster }) {
   return (
     <div className="movies__movie">
-      <div className="movie__data">
+      <div className="img_container">
         <img src={poster} alt={title} title={title} />
-        <h4 className="movie__title">{title}</h4>
-        <h5 className="movie__year">{year}</h5>
+      </div>
+      <div className="movie__data">
+        <h4 className="movie__title">{title} </h4>
+        <h5 className="movie__year">({year})</h5>
         <ul className="movie__genres">
           {genres.map((genre, index) => (
             <li key={index} className="movie__genre">

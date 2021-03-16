@@ -3,16 +3,17 @@ html,body{
     padding:0;
 }
 body{
-    background-color: #1b1b1b;
+    background-color: #a0a0a0;
     color:#f2f2f2;
 }
 .load_msg{
-    animation: BLINK 1s infinite;
+    animation: BLINK 1s infinite both;
     
 }
 .movies {
     display:flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .loader{

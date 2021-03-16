@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Movie.css";
 
 function Moives({ year, title, genres, summary, poster }) {
   return (
     <div className="movies__movie">
-      <img src={poster} alt={title} title={title} />
       <div className="movie__data">
+        <img src={poster} alt={title} title={title} />
         <h4 className="movie__title">{title}</h4>
         <h5 className="movie__year">{year}</h5>
         <ul className="movie__genres">

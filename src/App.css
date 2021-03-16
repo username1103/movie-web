@@ -1,3 +1,40 @@
+html,body{
+    margin:0;
+    padding:0;
+}
 body{
+    background-color: #1b1b1b;
+    color:#f2f2f2;
+}
+.load_msg{
+    animation: BLINK 1s infinite;
     
+}
+.movies {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.loader{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@-webkit-keyframes BLINK{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes BLINK{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }

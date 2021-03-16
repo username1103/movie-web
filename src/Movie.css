@@ -1,0 +1,24 @@
+.movies__movie{
+    width:100%;
+    padding:1em 0 1em 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+img{
+    margin-right:0.5em;
+    float:left;
+}
+.movies__movie:nth-child(2n) img{
+    float:right;
+} 
+
+.movie__genres{
+    padding:0;
+    margin:0;
+}
+.movie__genre{
+    display:inline-block;
+    padding-right:0.5em;
+    color:#979797;
+}
+
+

@@ -15,3 +15,5 @@ ReactJS를 공부하기 위한 Movie-Web 만들어보기
 5. [Using PropTypes](https://github.com/username1103/movie-web/commit/62fe3945ad075dda2e001c343c4aba0fa4fa5a54)
 
 6. [class component and state](https://github.com/username1103/movie-web/commit/699812ffee72e451036e8f27a6685206401483bf)
+
+7. [use axios and get data](https://github.com/username1103/movie-web/commit/900e4713f01d610efeb1731e9f38bce8f1169efc)

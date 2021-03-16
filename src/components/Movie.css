@@ -1,10 +1,20 @@
 .movies__movie{
-    width:35%;
+    width:90%;
     display:flex;
     border: 0.1px solid #7e7e7e;
     box-shadow: 0.2em 0.2em #555454;
     background-color: #7e7e7e;
     margin:1em 2em 1em 2em;
+}
+.movie_container{
+    width:40%;
+}
+.movie_container:hover{
+    transform: translateY(-0.2em);
+    transition: 0.4s;
+}
+.movie_container a{
+    text-decoration-line: none;
 }
 .img_container{
     margin:0 0.5em;
@@ -18,10 +28,12 @@
     font-size:1.25em;
     margin:0;
     display:inline;
+    color:#f2f2f2;
 }
 .movie__year{
     margin:0;
     display:inline;
+    color:#f2f2f2;
 }
 .movie__genres{
     padding:0;
@@ -44,7 +56,7 @@
     }
 }
 @media(max-width:1024px){
-    .movies__movie{
+    .movie_container{
         width:80%;
     }
 }

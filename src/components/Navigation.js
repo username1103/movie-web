@@ -8,7 +8,7 @@ function Navigation() {
       <Link className="home__link" to="/">
         Home
       </Link>
-      <Link clasSName="about__link" to="/about">
+      <Link className="about__link" to="/about">
         About
       </Link>
     </div>

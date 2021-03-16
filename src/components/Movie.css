@@ -1,18 +1,18 @@
 .movies__movie{
-    width:40%;
+    width:35%;
     display:flex;
     border: 0.1px solid #7e7e7e;
     box-shadow: 0.2em 0.2em #555454;
     background-color: #7e7e7e;
-    margin:1em;
+    margin:1em 2em 1em 2em;
 }
 .img_container{
     margin:0 0.5em;
 }
 .img_container img{
+    width:180px;
     top:-1em;
     position:relative;
-
 }
 .movie__title{
     font-size:1.25em;
@@ -39,7 +39,7 @@
 }
 
 @media(max-width:1300px){
-    img{
+    .img_container img{
         width:150px;
     }
 }
@@ -49,9 +49,10 @@
     }
 }
 
-@media(max-width:500px){
-    img{
-        width:130px;
+@media(max-width:600px){
+    .img_container img{
+        top:-0.5em;
+        width:100px;
     }
     .movie__title{
         font-size:1em;

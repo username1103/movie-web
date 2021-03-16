@@ -1,0 +1,20 @@
+.Nav_Bar{
+    margin:1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.Nav_Bar a{
+    color:#f2f2f2;
+    text-decoration-line: none;
+    margin:1em;
+    font-size:1.25em;
+}
+.Nav_Bar a:hover{
+    color:#dda5a5;
+}
+@media(max-width:500px){
+    .Nav_Bar a{
+        font-size:1.1em;
+    }
+}

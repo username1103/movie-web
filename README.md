@@ -2,7 +2,11 @@
 
 ReactJS를 공부하기 위한 Movie-Web 만들어보기
 
+결과물 https://username1103.github.io/movie-web/
+
 ***
+
+과정
 
 1. [Create Component](https://github.com/username1103/movie-web/commit/d835fd0e5d3b6c82746794cae9d805fd31ae5046)
 
